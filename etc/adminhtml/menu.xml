@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * Adapttive/Wizard: module for Magento2 provides example for using UI step wizard
+ *
+ * @category XML
+ * @package Adapttive
+ * @subpackage Ui
+ * @author Milind Singh <hello@adapttive.com>
+ * @copyright 2020 Milind Singh
+ * @license MIT
+ * @version 1.0.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Adapttive_Wizard::wizard" title="Wizard" translate="title" module="Adapttive_Wizard" sortOrder="20" dependsOnModule="Adapttive_Wizard" resource="Adapttive_Wizard::wizard"/>
+        <add id="Adapttive_Wizard::wizard_form" title="Form" translate="title" module="Adapttive_Wizard" sortOrder="10" parent="Adapttive_Wizard::wizard" action="adapttive/wizard/" resource="Adapttive_Wizard::wizard_form"/>
+    </menu>
+</config>
